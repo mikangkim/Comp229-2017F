@@ -6,13 +6,22 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+<%--Title shows with favicon / Mikang Kim--%>
+
+    <title><%: Page.Title %>Great KungFu Master MIKA</title>
+    
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+                
+                <%--favicon shows various browser / Mikang Kim--%>
+                <link runat="server" rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+                <link runat="server" rel="icon" href="favicon.ico" type="image/ico"/>
+                <link rel="icon" href="favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 </head>
 <body>
@@ -46,30 +55,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <%--Own LOGO / Mikang Kim--%>
+                    <a class="navbar-brand" runat="server" href="~/"><img src="Models/LOGO.png" style="width:100%;height:100%;"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/">HOME</a></li>
+                        <li><a runat="server" href="~/About">SURVEY</a></li>
+                        
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
                 </div>
             </div>
         </div>
@@ -78,7 +72,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; Mikang Kim | 300921431 | COMP299 | <a runat="server" href="https://www.google.com/policies/privacy/">Privacy &amp; Terms</a></p>
             </footer>
         </div>
     </form>
