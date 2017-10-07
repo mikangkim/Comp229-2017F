@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Web.UI.WebControls;
+
 namespace GreatSurvey_COMP229_MikangKim {
     
     
@@ -47,7 +49,7 @@ namespace GreatSurvey_COMP229_MikangKim {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
-        
+
         /// <summary>
         /// compareValidate1 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace GreatSurvey_COMP229_MikangKim {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator compareValidate1;
-        
+
         /// <summary>
         /// alex control.
         /// </summary>
@@ -110,5 +112,18 @@ namespace GreatSurvey_COMP229_MikangKim {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label label;
+
+        protected CompareValidator CompareValidate1
+        {
+            get
+            {
+                return compareValidate1;
+            }
+
+            set
+            {
+                compareValidate1 = value;
+            }
+        }
     }
 }

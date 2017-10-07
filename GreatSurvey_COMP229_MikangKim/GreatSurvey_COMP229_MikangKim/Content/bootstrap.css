@@ -32,7 +32,7 @@ hgroup,
 main,
 nav,
 section,
-/*summary {
+summary {
   display: block;
 }
 
@@ -50,9 +50,9 @@ audio:not([controls]) {
 [hidden] {
   display: none;
 }
-*/
+
 html {
-  font-family: 'Trebuchet MS';
+  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -84,26 +84,26 @@ strong {
   font-weight: bold;
 }
 
-/*dfn {
+dfn {
   font-style: italic;
 }
-*/
+
 hr {
-  height: 2;
+  height: 0;
   -moz-box-sizing: content-box;
        box-sizing: content-box;
 }
 
 mark {
   color: #000;
-  background: #ff0;
+  background: #000;
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: 'Trebuchet MS';
+  font-family: monospace, serif;
   font-size: 1em;
 }
 
@@ -136,7 +136,7 @@ sub {
 }
 
 img {
-  border: 2;
+  border: 0;
 }
 
 svg:not(:root) {
@@ -150,7 +150,7 @@ figure {
 fieldset {
   padding: 0.35em 0.625em 0.75em;
   margin: 0 2px;
-  border: 1px solid #c0c0c0;
+  border: 1px solid #000;
 }
 
 legend {
@@ -163,7 +163,7 @@ input,
 select,
 textarea {
   margin: 0;
-  font-family: 'Trebuchet MS';
+  font-family: inherit;
   font-size: 100%;
 }
 
@@ -281,9 +281,6 @@ table {
   .table th {
     background-color: #000 !important;
   }
-
-  /*color*/
-
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -314,19 +311,18 @@ html {
 }
 
 body {
-  font-family: 'Trebuchet MS';
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
   background-color: #000;
 }
-/*Color*/
 
 input,
 button,
 select,
 textarea {
-  font-family: 'Trebuchet MS';
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
@@ -346,6 +342,7 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
+  text-decoration: underline;
 }
 
 a:focus {
@@ -356,9 +353,8 @@ a:focus {
 
 img {
   vertical-align: middle;
-  width: 980px;
+    width: 1073px;
 }
-/*Size*/
 
 .img-responsive {
   display: block;
@@ -406,7 +402,7 @@ hr {
 }
 
 p {
-  margin: 1 1 10px;
+  margin: 0 0 10px;
 }
 
 .lead {
@@ -478,7 +474,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Trebuchet MS';
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -563,7 +559,7 @@ h4 small,
 
 .page-header {
   padding-bottom: 9px;
-  margin: 48px 0 20px;
+  margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -717,7 +713,7 @@ address {
 
 code,
 pre {
-  font-family: 'Trebuchet MS';
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 code {
@@ -1687,7 +1683,7 @@ select[size] {
 }
 
 select optgroup {
-  font-family: 'Trebuchet MS';
+  font-family: inherit;
   font-size: inherit;
   font-style: inherit;
 }
@@ -2400,7 +2396,7 @@ input[type="button"].btn-block {
 }
 
 @font-face {
-  font-family: inherit;
+  font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
@@ -2409,7 +2405,7 @@ input[type="button"].btn-block {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Trebuchet MS';
+  font-family: 'Glyphicons Halflings';
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
@@ -6130,7 +6126,7 @@ body.modal-open,
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
-  font-family: 'Trebuchet MS';
+  font-family: serif;
 }
 
 .carousel-control .icon-prev:before {
