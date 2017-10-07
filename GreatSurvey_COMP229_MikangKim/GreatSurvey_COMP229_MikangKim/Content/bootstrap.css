@@ -103,7 +103,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  font-family: 'Trebuchet MS';
   font-size: 1em;
 }
 
@@ -163,7 +163,7 @@ input,
 select,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: 'Trebuchet MS';
   font-size: 100%;
 }
 
@@ -314,7 +314,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS';
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
@@ -326,7 +326,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Trebuchet MS';
   font-size: inherit;
   line-height: inherit;
 }
@@ -717,7 +717,7 @@ address {
 
 code,
 pre {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: 'Trebuchet MS';
 }
 
 code {
@@ -1687,7 +1687,7 @@ select[size] {
 }
 
 select optgroup {
-  font-family: inherit;
+  font-family: 'Trebuchet MS';
   font-size: inherit;
   font-style: inherit;
 }
@@ -2400,7 +2400,7 @@ input[type="button"].btn-block {
 }
 
 @font-face {
-  font-family: 'Glyphicons Halflings';
+  font-family: inherit;
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
@@ -2409,7 +2409,7 @@ input[type="button"].btn-block {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'Trebuchet MS';
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
@@ -4939,7 +4939,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #000;
 }
 
 .jumbotron h1 {
@@ -6130,7 +6130,7 @@ body.modal-open,
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
-  font-family: serif;
+  font-family: 'Trebuchet MS';
 }
 
 .carousel-control .icon-prev:before {
